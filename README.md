@@ -1,2 +1,2 @@
-# DHRMS-Fontend
+# DHRMS-Frontend
 HRIS for Deped CDO
