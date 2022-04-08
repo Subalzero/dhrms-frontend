@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { useAuth } from "./services/AuthProvider";
+import LogIn from "./components/LogIn";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  Outlet,
+} from "react-router-dom";
+import Dashboard from "./components/Dashboard";
+import Header from "./components/Header";
+import SideBarMenu from "./components/SideBarMenu";
+import EmployeesScreen from "./components/EmployeesScreen";
+import SettingsScreen from "./components/SettingsScreen";
 
 function App() {
+  const auth = useAuth();
+  const currentUser = auth.currentUser;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Router>
+      <Routes>
+        <Route path="/login" element={<LogIn />} />
+        <Route
+          path="/"
+          exact
+          element={
+            !currentUser ? (
+              <Navigate to="/login" replace />
+            ) : (
+              <Header>
+                <SideBarMenu>
+                  <Outlet />
+                </SideBarMenu>
+              </Header>
+            )
+          }
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Route index element={<Dashboard />} />
+          <Route path="employees" element={<EmployeesScreen />} />
+          <Route path="settings" element={<SettingsScreen />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
