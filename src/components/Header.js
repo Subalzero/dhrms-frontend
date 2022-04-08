@@ -1,6 +1,7 @@
 import React, { Children } from "react";
 import { useAuth } from "../services/AuthProvider";
 import "./dashboard.css";
+import "./header.css";
 
 export default function Header({ children }) {
   const auth = useAuth();
@@ -11,7 +12,10 @@ export default function Header({ children }) {
   };
   return (
     <div>
-      <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <header
+        className="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow"
+        style={{ backgroundColor: "gold" }}
+      >
         <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
           <div className="row">
             <div className="col-md-6">
@@ -38,15 +42,14 @@ export default function Header({ children }) {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <input
-          className="form-control form-control-dark w-100"
-          type="text"
-          placeholder="Search"
-          aria-label="Search"
-        />
+        <div className=" w-100" />
         <div className="navbar-nav">
           <div className="nav-item text-nowrap">
-            <a className="nav-link px-3" href="/login" onClick={signOut}>
+            <a
+              className="nav-link px-3 text-white"
+              href="/login"
+              onClick={signOut}
+            >
               Sign out
             </a>
           </div>
