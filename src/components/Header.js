@@ -27,7 +27,7 @@ export default function Header({ children }) {
               />
             </div>
             <div className="col-md-6 align-middle">
-              <span class="align-middle">DHRMS</span>
+              <span class="align-middle">DHRIS</span>
             </div>
           </div>
         </a>

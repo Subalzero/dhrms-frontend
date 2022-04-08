@@ -82,15 +82,6 @@ export default function SideBarMenu({ children }) {
                       Salary Budget
                     </a>
                     <a
-                      href="#average"
-                      className="list-group-item"
-                      data-toggle="collapse"
-                    >
-                      <i className="glyphicon glyphicon-chevron-right"></i>
-                      Average Salary
-                    </a>
-
-                    <a
                       href="#increment"
                       className="list-group-item"
                       data-toggle="collapse"
