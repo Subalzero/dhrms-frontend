@@ -13,14 +13,18 @@ export default function Header({ children }) {
     <div>
       <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
         <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
-          <div className="text-center">
-            <img
-              src={
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Department_of_Education_%28DepEd%29.svg/490px-Department_of_Education_%28DepEd%29.svg.png"
-              }
-              style={{ height: 40 }}
-            />
-            DHRMS
+          <div className="row">
+            <div className="col-md-6">
+              <img
+                src={
+                  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Department_of_Education_%28DepEd%29.svg/490px-Department_of_Education_%28DepEd%29.svg.png"
+                }
+                style={{ height: 40 }}
+              />
+            </div>
+            <div className="col-md-6 align-middle">
+              <span class="align-middle">DHRMS</span>
+            </div>
           </div>
         </a>
         <button

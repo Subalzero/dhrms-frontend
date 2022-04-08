@@ -51,7 +51,7 @@ export default function SideBarMenu({ children }) {
                 <a
                   className={`nav-link ${selected == 1 ? "active" : ""}`}
                   aria-current="page"
-                  href="#"
+                  href="/"
                 >
                   DASHBOARD
                 </a>
