@@ -12,6 +12,7 @@ import Header from "./components/Header";
 import SideBarMenu from "./components/SideBarMenu";
 import EmployeesScreen from "./components/EmployeesScreen";
 import SettingsScreen from "./components/SettingsScreen";
+import "./App.css";
 
 function App() {
   const auth = useAuth();

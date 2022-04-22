@@ -1,0 +1,14 @@
+.app-scrollbar {
+  position: relative;
+  overflow: auto;
+  height: 375px;
+}
+
+.table-wrapper-scroll-y {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-comp {
+  flex: 1;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import EmployeesTable from "./employees/EmployeesTable";
 
 export default function EmployeesScreen() {
   return (
@@ -19,66 +20,7 @@ export default function EmployeesScreen() {
           <input type="text" className="form-control" placeholder="Search" />
         </div>
       </div>
-      <div>
-        <table className="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                </div>
-              </th>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-              <th scope="col" className="text-center">
-                Actions
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                </div>
-              </th>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>
-                <div className="row">
-                  <button className="col btn btn-primary w-50">Show</button>
-                  <button className="col btn btn-danger w-50">Delete</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <EmployeesTable />
     </main>
   );
 }

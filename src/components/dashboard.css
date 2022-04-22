@@ -98,3 +98,18 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
 }
+
+.app-scrollbar {
+  position: relative;
+  overflow: auto;
+  height: 375px;
+}
+
+.table-wrapper-scroll-y {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-comp {
+  flex: 1;
+}
