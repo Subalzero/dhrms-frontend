@@ -20,6 +20,7 @@ export default function SchoolDistrictReportComponent() {
       </div>
       <div>
         <h6>Summary</h6>
+        <table></table>
       </div>
     </section>
   );
