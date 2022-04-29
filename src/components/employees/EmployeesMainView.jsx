@@ -16,6 +16,11 @@ const EmployeesMainView = () => {
           </div>
           <input type="text" className="form-control" placeholder="Search" />
         </div>
+        <button
+          className="btn btn-primary"
+          title="Upload .csv file."
+          onClick={() => console.log("Uploaded")}
+        >{`Upload .csv file`}</button>
       </div>
       <EmployeesTable />
     </>
