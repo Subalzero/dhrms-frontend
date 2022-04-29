@@ -1,5 +1,4 @@
 import React from "react";
-import EmployeesTable from "./employees/EmployeesTable";
 
 export default function EmployeesScreen({ children }) {
   return (
