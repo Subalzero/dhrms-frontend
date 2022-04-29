@@ -6,3 +6,8 @@
   font-size: 125%;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#navbar-nav {
+  background-color: #fcba03;
+  box-shadow: none;
+}

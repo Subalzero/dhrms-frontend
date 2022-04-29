@@ -14,20 +14,21 @@ export default function Header({ children }) {
     <div>
       <header
         className="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow"
-        style={{ backgroundColor: "gold" }}
+        style={{ backgroundColor: "#fcba03" }}
       >
-        <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
+        <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" id="navbar-nav" href="/">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-3">
               <img
                 src={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Department_of_Education_%28DepEd%29.svg/490px-Department_of_Education_%28DepEd%29.svg.png"
+                  // "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Department_of_Education_%28DepEd%29.svg/490px-Department_of_Education_%28DepEd%29.svg.png"
+                  process.env.PUBLIC_URL + '/DEPED_CDO_TRANSPARENT.png'
                 }
                 style={{ height: 40 }}
               />
             </div>
             <div className="col-md-6 align-middle">
-              <span class="d-flex header-text pt-1">DHRIS</span>
+              <span class="d-flex header-text pt-1">DEPED Human Resource Information System</span>
             </div>
           </div>
         </a>

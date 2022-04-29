@@ -71,7 +71,7 @@ export default function SideBarMenu({ children }) {
                       data-toggle="collapse"
                     >
                       <i className="glyphicon glyphicon-chevron-right"></i>
-                      Designation Summary
+                      Summary of Position
                     </a>
                     <a
                       href="#total"
