@@ -13,6 +13,7 @@ import SideBarMenu from "./components/SideBarMenu";
 import EmployeesScreen from "./components/EmployeesScreen";
 import SettingsScreen from "./components/SettingsScreen";
 import "./App.css";
+import EmployeesMainView from "./components/employees/EmployeesMainView";
 
 function App() {
   const auth = useAuth();
@@ -38,7 +39,16 @@ function App() {
           }
         >
           <Route index element={<Dashboard />} />
-          <Route path="employees" element={<EmployeesScreen />} />
+          <Route
+            path="employees"
+            element={
+              <EmployeesScreen>
+                <Outlet />
+              </EmployeesScreen>
+            }
+          >
+            <Route index element={<EmployeesMainView />} />
+          </Route>
           <Route path="settings" element={<SettingsScreen />} />
         </Route>
       </Routes>
