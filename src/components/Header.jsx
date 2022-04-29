@@ -46,7 +46,7 @@ export default function Header({ children }) {
         <div className="navbar-nav">
           <div className="nav-item text-nowrap">
             <a
-              className="nav-link px-3 text-white"
+              className="nav-link px-3 text-black"
               href="/login"
               onClick={signOut}
             >

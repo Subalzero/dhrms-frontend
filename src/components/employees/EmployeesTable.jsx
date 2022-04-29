@@ -11,7 +11,7 @@ const mockData = [
   },
   {
     lastName: "Otto",
-    firstName: "Mark",
+    firstName: "Mel Liza",
     middleName: "Hudson",
     employeeNo: 1,
   },
@@ -76,7 +76,6 @@ export default function EmployeesTable() {
                   <td>
                     <div className="row">
                       <button className="col btn btn-primary m-2">Show</button>
-                      <button className="col btn btn-danger m-2">Delete</button>
                     </div>
                   </td>
                 </tr>

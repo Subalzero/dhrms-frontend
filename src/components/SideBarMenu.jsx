@@ -63,7 +63,7 @@ export default function SideBarMenu({ children }) {
                       data-toggle="collapse"
                     >
                       <i className="glyphicon glyphicon-chevron-right"></i>
-                      Personal Summary
+                      Personnel Summary
                     </a>
                     <a
                       href="#designation"
@@ -95,7 +95,7 @@ export default function SideBarMenu({ children }) {
                       data-toggle="collapse"
                     >
                       <i className="glyphicon glyphicon-chevron-right"></i>
-                      Loyalty Award Summary
+                      Eligible for Loyalty Summary
                     </a>
                   </div>
                 )}

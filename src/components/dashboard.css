@@ -113,3 +113,17 @@ body {
 .table-comp {
   flex: 1;
 }
+
+.line-division {
+  border:3px solid black;
+}
+
+.district-dropdown{
+  margin-bottom:3rem;
+  width:30%;
+
+}
+
+.personal-search{
+  width:70%;
+}
